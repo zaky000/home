@@ -61,6 +61,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
+    justify-content: center;
 }
 .content {
     display: flex;
@@ -120,7 +121,8 @@ nav ul li a {
     place-items: center;
 }
 .image img {
-    width: min(25rem, 90%);
+    /*width: min(25rem, 90%);*/
+    width: 400px;
     border-radius: 50%;
 }
 @media (width < 750px) {
@@ -133,7 +135,7 @@ nav ul li a {
         height: 100vh;
         background: #2c3e50;
         top: 60px;
-        left: -100%;
+        left: +100%;
         text-align: center;
         transition: all .5s;
         opacity: 0.8;
@@ -157,7 +159,26 @@ nav ul li a {
     .image {
         grid-area: 1/1/2/2;
     }
+    .image img {
+        width: 350px;
+    }
     .btn-box {
         margin: auto;
+    }
+    .home-sci {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}
+@media (width < 560px) {
+    .image img {
+        width: 300px;
+    }
+}
+@media (width < 350px) {
+    .image img{
+        width: 200px;
     }
 }
