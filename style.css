@@ -125,7 +125,7 @@ nav ul li a {
     width: 400px;
     border-radius: 50%;
 }
-@media (width < 750px) {
+@media (width < 820px) {
     .checkbtn {
         display: block;
     }
@@ -167,7 +167,7 @@ nav ul li a {
     }
     .home-sci {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         gap: 1rem;
         margin-top: 2rem;
     }
