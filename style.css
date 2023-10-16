@@ -125,6 +125,10 @@ nav ul li a {
     width: 400px;
     border-radius: 50%;
 }
+a.active, a:hover {
+    color: #00abf0;
+    transition: .5s;
+}
 @media (width < 820px) {
     .checkbtn {
         display: block;
