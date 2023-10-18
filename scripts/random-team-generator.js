@@ -4,6 +4,4 @@ const shuffle = document.getElementById("shuffle-button");
 const teamList = document.getElementById("output");
 const reset = document.getElementById("reset-button");
 
-reset.addEventListener("click", () => {
-    console.log("Hello")
-});
+people = ["sessa", "zaky", "adib"]
