@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Team Generator</title>
+    <link rel=”icon”>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <h1>Random Team Generator</h1>
+    <div class="input-windows">
+        <textarea id="name-input" cols="25" rows="10" placeholder="Masukkan nama, pisahkan dengan koma"></textarea>
+        <br>
+        <input type="number" placeholder="Masukkan jumlah tim" id="number-of-team">
+        <br>
+        <button type="button" id="shuffle-button" onclick="getteam()">Acak</button>
+        <script></script>
+    </div>
+    <div class="hidden">
+        <h2>Daftar Grup</h2>
+        <div id="output"></div>
+        <button id="reset-button">Reset</button>
+    </div>
+    <script src="../scripts/random-team-generator.js"></script>
+
+</body>
+</html>
