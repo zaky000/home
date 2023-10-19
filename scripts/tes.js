@@ -3,6 +3,9 @@ const nameInput = document.getElementById("name-input")
 const numberOfTeam = document.getElementById("number-of-team")
 const shuffle = document.getElementById("shuffle-button")
 const reset = document.getElementById("reset-button")
+const container = document.querySelector(".input-windows");
+const answer = document.querySelector(".hidden");
+const teams = document.querySelector(".teams");
 
 function getteam() {
     const inter = nameInput.value;

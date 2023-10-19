@@ -9,29 +9,43 @@
     <title>Random Team Generator</title>
     <link rel=”icon”>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="team-generator.css">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <h1>Random Team Generator</h1>
-    <div class="input-windows">
+    <div class="input-windows" id="windows">
         <textarea id="name-input" cols="25" rows="10" placeholder="Masukkan nama, pisahkan dengan koma"></textarea>
         <br>
         <input type="number" placeholder="Masukkan jumlah tim" id="number-of-team">
         <br>
-        <button type="button" id="shuffle-button" onclick="getteam()">Acak</button>
+        <button type="button" id="shuffle-button" onclick="getteam();hide()">Acak</button>
         <script></script>
     </div>
-    <div class="hidden">
+    <div class="hidden teams" id="popup">
         <h2>Daftar Grup</h2>
         <div id="output"></div>
-        <button id="reset-button">Reset</button>
+        <button id="reset-button" onclick="show()">Reset</button>
     </div>
-    <button onclick="myFunction()">Try it</button>
-<p id="demo">Click the button double this text.</p>
-
-<script src="../scripts/try.js"></script>
-    <script src="../scripts/tes.js"></script>
-    <script>output.innerHTML += `<p> Team${1}: ${hasil[0]} </p>`</script>
+<script src="../scripts/tes.js"></script>
+<script>
+    function hide() {
+       document.getElementById('windows').style.display ='none';
+       document.getElementById('popup').style.visibility = 'visible';
+       document.getElementById('output').style.visibility = 'visible';
+       document.getElementById('reset-button').style.visibility ='visible';
+       console.log("hai");
+    }
+    function show() {
+        document.getElementById('windows').style.display ='block';
+        document.getElementById('popup').style.visibility = 'hidden';
+        document.getElementById('output').style.visibility = 'hidden';
+        document.getElementById('reset-button').style.visibility ='hidden';
+        console.log("bye");
+        output.innerHTML = "";
+    }
+ </script>
+    
 
 </body>
 </html>
