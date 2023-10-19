@@ -5,3 +5,5 @@ const teamList = document.getElementById("output");
 const reset = document.getElementById("reset-button");
 
 people = ["sessa", "zaky", "adib"]
+
+output.innerHTML
