@@ -1,3 +1,25 @@
 .teams {
     visibility: hidden;
 }
+.center {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.input-windows button {
+    width: 190px;
+    margin-top: 10px
+}
+.input-windows input { 
+    width: 190px;
+    margin-top: 5px;
+}
+.input-windows textarea {
+    margin-top: 5px;
+    width: 190px;
+    
+}
+.hidden button {
+    width: 190px;
+    margin-top: 10px;
+}

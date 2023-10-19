@@ -13,8 +13,23 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <h1>Random Team Generator</h1>
-    <div class="input-windows" id="windows">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class='bx bx-list-ul'></i>
+        </label>
+        <label class="logo">zaky.</label>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#" class="active">Project</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="section"></section>
+    <h1 class="center">Random Team Generator</h1>
+    <div class="input-windows center" id="windows">
         <textarea id="name-input" cols="25" rows="10" placeholder="Masukkan nama, pisahkan dengan koma"></textarea>
         <br>
         <input type="number" placeholder="Masukkan jumlah tim" id="number-of-team">
@@ -22,11 +37,12 @@
         <button type="button" id="shuffle-button" onclick="getteam();hide()">Acak</button>
         <script></script>
     </div>
-    <div class="hidden teams" id="popup">
-        <h2>Daftar Grup</h2>
+    <div class="hidden teams center" id="popup">
+        <h2>Daftar Tim</h2>
         <div id="output"></div>
         <button id="reset-button" onclick="show()">Reset</button>
     </div>
+    </section>
 <script src="../scripts/tes.js"></script>
 <script>
     function hide() {
