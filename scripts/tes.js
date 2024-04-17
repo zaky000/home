@@ -15,7 +15,12 @@ function getteam() {
     jumlahTim = jmlTim;
     jumlahAnggota = Math.floor(orang.length / jumlahTim);
     timLebihSatu = orang.length % jumlahTim;
-    let acak = orang.sort(() => Math.random() - 0.5);
+    let acak1 = orang.sort(() => Math.random() - 0.5);
+    console.log(acak1);
+    let acak2 = acak1.sort(() => Math.random() - 0.5);
+    console.log(acak2);
+    let acak = acak2.sort(() => Math.random() - 0.5);
+    console.log(acak);
     console.log("click");
     function pengacak(list, pembagi, lebih) {
         var index = 0;
