@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Team Generator</title>
+    <link rel=”icon”>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="team-generator.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class='bx bx-list-ul'></i>
+        </label>
+        <label class="logo">zaky.</label>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#" class="active">Project</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="section"></section>
+    <h1 class="center">Random Team Generator</h1>
+    <div class="input-windows center" id="windows">
+        <textarea id="name-input" cols="25" rows="10" placeholder="Masukkan nama, pisahkan dengan koma"></textarea>
+        <br>
+        <input type="number" placeholder="Masukkan jumlah tim" id="number-of-team">
+        <br>
+        <button type="button" id="shuffle-button" onclick="getteam();hide()">Acak</button>
+        <script></script>
+    </div>
+    <div class="hidden teams center" id="popup">
+        <h2>Daftar Tim</h2>
+        <div id="output"></div>
+        <button id="reset-button" onclick="show()">Reset</button>
+    </div>
+    </section>
+<script src="../scripts/tes.js"></script>
+<script>
+    function hide() {
+       document.getElementById('windows').style.display ='none';
+       document.getElementById('popup').style.visibility = 'visible';
+       document.getElementById('output').style.visibility = 'visible';
+       document.getElementById('reset-button').style.visibility ='visible';
+       console.log("hai");
+    }
+    function show() {
+        document.getElementById('windows').style.display ='block';
+        document.getElementById('popup').style.visibility = 'hidden';
+        document.getElementById('output').style.visibility = 'hidden';
+        document.getElementById('reset-button').style.visibility ='hidden';
+        console.log("bye");
+        output.innerHTML = "";
+    }
+ </script>
+    
+
+</body>
+</html>
