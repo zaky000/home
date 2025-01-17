@@ -125,6 +125,9 @@ nav ul li a {
     width: 400px;
     /*border-radius: 50%;*/
 }
+a {
+    text-decoration: none;
+}
 a.active, a:hover {
     color: #00abf0;
     transition: .5s;
